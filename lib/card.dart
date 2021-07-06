@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:landmarks/details.dart';
 
 class CardView extends StatefulWidget {
@@ -64,7 +63,8 @@ class _CardViewState extends State<CardView> {
                     children: [
                       Text(
                         widget.name,
-                        style: GoogleFonts.quicksand(
+                        style: TextStyle(
+                            fontFamily: "Quicksand",
                             fontSize: 36,
                             fontWeight: FontWeight.w500,
                             color: Colors.white),

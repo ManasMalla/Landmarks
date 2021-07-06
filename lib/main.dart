@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:landmarks/card.dart';
 
 void main() {
@@ -59,7 +58,8 @@ class _LandMarksAppState extends State<LandMarksApp> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Landmarks",
-            style: GoogleFonts.quicksand(
+            style: TextStyle(
+                fontFamily: "Quicksand",
                 fontSize: 26,
                 color: Colors.black,
                 fontWeight: FontWeight.w500)),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class DetailsPage extends StatefulWidget {
   final String image;
@@ -147,7 +146,8 @@ class _DetailsPageState extends State<DetailsPage> {
                         children: [
                           Text(
                             widget.name,
-                            style: GoogleFonts.quicksand(
+                            style: TextStyle(
+                                fontFamily: "Quicksand",
                                 fontSize: 36,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black),
@@ -187,7 +187,8 @@ class _DetailsPageState extends State<DetailsPage> {
                           ),
                           Text(
                             "Joshua Tree National Park",
-                            style: GoogleFonts.quicksand(
+                            style: TextStyle(
+                                fontFamily: "Quicksand",
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.grey),
@@ -195,7 +196,8 @@ class _DetailsPageState extends State<DetailsPage> {
                           Spacer(),
                           Text(
                             "California",
-                            style: GoogleFonts.quicksand(
+                            style: TextStyle(
+                                fontFamily: "Quicksand",
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.grey),
@@ -208,8 +210,10 @@ class _DetailsPageState extends State<DetailsPage> {
                               child: Text(
                         widget.description,
                         textAlign: TextAlign.justify,
-                        style: GoogleFonts.quicksand(
-                            fontSize: 16, color: Colors.grey),
+                        style: TextStyle(
+                            fontFamily: "Quicksand",
+                            fontSize: 16,
+                            color: Colors.grey),
                       ))),
                     ],
                   ),
